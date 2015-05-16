@@ -203,3 +203,53 @@ after succesful first login we wat app to create new user profile. We can do thi
 
     }
 ```
+##OH i forgot :)
+add this lines to end of
+###app\config\core.php
+```php
+/** 
+ * HybridAuth component
+ *
+ */
+ Configure::write('Hybridauth', array(
+    // openid providers
+    "Google" => array(
+        "enabled" => true,
+        "keys" => array("id" => "Your-Google-Key","secret" => "Your-Google-Secret"),
+    ),
+    "Twitter" => array(
+        "enabled" => true,
+        "keys" => array("key" => "Your-Twitter-Key", "secret" => "Your-Twitter-Secret")
+    ),
+    "Facebook" => array(
+        "enabled" => true,
+        "keys" => array("id" => "Your-Facebook-Key", "secret" => "Your-Facebook-Secret"),
+    ),
+    "OpenID" => array(
+        "enabled" => false
+    ),
+    "Yahoo" => array(
+        "enabled" => false,
+        "keys" => array("id" => "", "secret" => ""),
+    ),
+    "AOL" => array(
+        "enabled" => false
+    ),
+    "Live" => array(
+        "enabled" => false,
+        "keys" => array("id" => "", "secret" => "")
+    ),
+    "MySpace" => array(
+        "enabled" => false,
+        "keys" => array("key" => "", "secret" => "")
+    ),
+    "LinkedIn" => array(
+        "enabled" => false,
+        "keys" => array("key" => "", "secret" => "")
+    ),
+    "Foursquare" => array(
+        "enabled" => false,
+        "keys" => array("id" => "", "secret" => "")
+    ),
+));
+```
