@@ -1,4 +1,4 @@
-# CakePHP-HybridAuth plugin
+# CakePHP2.x-HybridAuth plugin
 Cakephp HybridAuth Plugin created according to the tutorial http://miftyisbored.com/complete-social-login-application-tutorial-cakephp-2-3-twitter-facebook-google/
 
 ##The Setup
